@@ -1,0 +1,9 @@
+<h2>Products</h2>
+
+<a href="/add/">Add Product</a>
+
+<ul>
+    {% for item in items %}
+    <li>{{ item.name }} — ${{ item.price }} — stock: {{ item.stock }}</li>
+    {% endfor %}
+</ul>
